@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <title>SELAB</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<!--COLORS
+			yellow = #f7b01a
+			dark blue = #102a4f
+			orange = #e47725
+			green = #6ea442
+		-->
+  	</head>
+
+	<body>
+		<img src="assets/img/logo.jpg" id="logo">
+		<ul id="nav">
+			<li><a href="index.html">home</a></li>
+			<li><a href="research.html">research</a></li>
+			<li><a href="publications.html">publications</a></li>
+			<li><a href="people.html">people</a></li>
+			<li><a href="news.html">news</a></li>
+			<li><a href="resources.html">resources</a></li>
+		</ul>
+
+		<div id="page-title">
+			Recent News.
+		</div>
+		<div id="news-area">
+		</div>
+		<script>
+			//Insert news items in data array below.
+			//FORMAT: [Headline, Date, Text]
+			var data = [
+			  	["A fresh start to a new semester, with new members of course.",
+		  		"September 2015",
+				"Angelica Godinez and Jasmine Junge, OD joined SELAB as part of their PhD rotation."],
+
+				["SELAB continues to grow!",
+		  		"April 2015",
+				"Mehmet Agaoglu, PhD has recently joined SELAB as a post-doctoral researcher."],
+			];
+
+			var htmlExpr = '';
+
+			//Loop through each news data row and format/display it.
+			for (var i = 0; i < data.length; i++) {
+				htmlExpr += '<div class=\"text-area\">';
+				htmlExpr += '<div class=\"headline\">' + data[i][0] + '</div>';
+				htmlExpr += '<div class=\"date\">' + data[i][1] + '</div>';
+				htmlExpr += '<div class=\"detail\">' + data[i][2] + '</div>';
+				htmlExpr += '</div>';
+			}
+			document.getElementById("news-area").innerHTML += htmlExpr;
+		</script>
+
+		<div id="footer">
+			694 Minor Hall, University of California, Berkeley, CA 94720-2020, USA<br>
+			Phone: (510) 642-4720
+		</div>
+	</body>
+</html>

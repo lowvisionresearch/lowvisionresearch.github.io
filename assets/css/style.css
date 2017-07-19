@@ -1,0 +1,169 @@
+/** GLOBAL **/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    margin: 0;
+    background-color: #102a4f;
+    color: #f7b01a;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    height: 150px;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+#nav {
+    list-style-type: none;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul#nav {
+    margin-top: 30px;
+    padding: 0;
+}
+
+#nav li {
+    display: inline;
+    margin-left: 25px;
+}
+
+#footer {
+    font-size: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+    text-align: right;
+}
+
+#page-title {
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.subtitle {
+    margin-left: 7.5%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.text-area {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    line-height: 175%;
+}
+
+.text-area li {
+    padding-bottom: 20px;
+}
+
+/** HOME **/
+
+.photo {
+    background: #EDEFF0;
+    padding: 10px;
+    display: inline-block;
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    margin: 20px;
+}
+
+#centered-content {
+    text-align: center;
+    font-weight: 500;
+}
+
+#centered-content img {
+    display: inline-block;
+}
+
+#centered-text {
+    display: inline-block;
+    vertical-align: top;
+    word-wrap: normal;
+    text-align: left;
+    margin-top: 80px;
+}
+
+/** PEOPLE **/
+
+.profile-area {
+    display: inline-block;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.profile-pic {
+    height: 200px;
+}
+
+.profile-pic img {
+    border: solid 4px #e47725;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.profile-desc {
+    margin-top: 20px;
+}
+
+.profile-desc h1 {
+    margin: inherit;
+    padding: inherit;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.profile-desc h2 {
+    margin: inherit;
+    padding: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin-top: 0;
+}
+
+.profile-desc h3 {
+    margin: inherit;
+    padding: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    margin-top: 0;
+}
+
+/** NEWS **/
+.headline {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.date {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.detail {
+
+}
