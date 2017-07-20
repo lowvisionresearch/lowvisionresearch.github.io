@@ -90,21 +90,23 @@ ul#nav {
     margin: 20px;
 }
 
-#centered-content {
+.centered-content {
     text-align: center;
-    font-weight: 500;
-}
-
-#centered-content img {
     display: inline-block;
+    width: 40%;
+    margin-bottom: 40px;
+    vertical-align: top;
 }
 
 #centered-text {
-    display: inline-block;
-    vertical-align: top;
+    font-weight: 500;
     word-wrap: normal;
     text-align: left;
-    margin-top: 80px;
+    margin-top: 25%;
+}
+
+#home-div {
+    text-align: center;
 }
 
 /** PEOPLE **/

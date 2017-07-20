@@ -25,16 +25,41 @@
 		</ul>
 
 		<div id="home-div">
-			<div id="centered-content">
-				<img src="assets/img/labphotosp17.JPG" height="300px" class="photo">
-				<div id="centered-text">
-				Sight Enhancement <br>Lab at Berkeley
+			<div class="centered-content">
+				<img src="assets/img/labphoto.jpg" height="300px" class="photo"><br>
+				<div id="news-area" style="text-align: right">
+				</div>
 			</div>
+			<script>
+				//Insert news items in data array below.
+				//FORMAT: [Headline, Date, Text]
+				var data = [
+					["A fresh start to a new semester, with new members of course.",
+					"September 2015",
+					"Angelica Godinez and Jasmine Junge, OD joined SELAB as part of their PhD rotation."]
+				];
+
+				var htmlExpr = '';
+
+				//Loop through each news data row and format/display it.
+				for (var i = 0; i < data.length; i++) {
+					htmlExpr += '<div class=\"text-area\">';
+					htmlExpr += '<div class=\"headline\">' + data[i][0] + '</div>';
+					htmlExpr += '<div class=\"date\">' + data[i][1] + '</div>';
+					htmlExpr += '<div class=\"detail\">' + data[i][2] + '</div>';
+					htmlExpr += '</div>';
+				}
+				document.getElementById("news-area").innerHTML += htmlExpr;
+			</script>
+			<div class="centered-content">
+				<div id="centered-text">
+					Sight Enhancement <br>Lab at Berkeley
+				</div>
 			</div>
 		</div>
 
 		<div id="footer">
-			694 Minor Hall, University of California, Berkeley, CA 94720-2020, USA<br>
+			Minor Hall, University of California, Berkeley, CA 94720-2020, USA<br>
 			Phone: (510) 642-4720
 		</div>
 	</body>
