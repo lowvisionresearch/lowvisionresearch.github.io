@@ -20,27 +20,82 @@ a:hover {
     text-decoration: underline;
 }
 
+#title {
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    float: left;
+}
+
+#title h1 {
+    margin: inherit;
+    padding: inherit;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+#title h2 {
+    margin: inherit;
+    padding: 0;
+    font-size: 24px;
+    font-weight: inherit;
+}
+
+#title h3 {
+    margin: inherit;
+    padding: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
 #logo {
     height: 150px;
-    padding-left: 50px;
+    padding-top: 10px;
     display: inline-block;
+    float: right;
+}
+
+#berkeleylogo {
+    width: 150px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+    float: right;
 }
 
 #nav {
     list-style-type: none;
     font-size: 24px;
-    display: inline-block;
-    vertical-align: top;
+    clear: both;
 }
 
 ul#nav {
-    margin-top: 30px;
-    padding: 0;
+    float: right;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    padding-left: 0;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: solid 3px #e47725;
+    border-bottom: solid 3px #e47725;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 #nav li {
     display: inline;
     margin-left: 25px;
+}
+
+#news-snippet {
+    border: solid 3px #6ea442;
+    margin-top: 50px;
+    text-align: right;
 }
 
 #footer {
@@ -57,7 +112,7 @@ ul#nav {
 }
 
 .subtitle {
-    margin-left: 7.5%;
+    margin-left: 10%;
     margin-top: 20px;
     margin-bottom: 40px;
     font-size: 28px;
@@ -98,15 +153,18 @@ ul#nav {
     vertical-align: top;
 }
 
-#centered-text {
-    font-weight: 500;
-    word-wrap: normal;
-    text-align: left;
-    margin-top: 25%;
+.centered-content img {
+    display: inline-block;
+}
+
+#news-area {
+    display: inline-block;
+    margin-left: 5%;
 }
 
 #home-div {
     text-align: center;
+    clear: both;
 }
 
 /** PEOPLE **/
@@ -129,6 +187,7 @@ ul#nav {
 
 .profile-desc {
     margin-top: 20px;
+    text-align: left;
 }
 
 .profile-desc h1 {
