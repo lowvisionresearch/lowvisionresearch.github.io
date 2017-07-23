@@ -50,129 +50,130 @@
 		<div class="subtitle">
 			Post-Doctoral Fellows.
 		</div>
-
-		<div class="text-area" style="text-align: center">
-			<div class="profile-area">
-				<a href="http://www.mnagaoglu.com/" target="_blank">
-					<div class="profile-pic">
-						<img src="assets/img/people_mehmet.jpg">
-					</div>
-					<div class="profile-desc">
-						<h1>Mehmet N. Agaoglu, PhD</h1>
-						<h3>mna[at]berkeley(dot)edu</h3>
-					</div>
-				</a>
-			</div>
-
-			<div class="profile-area">
-				<div class="profile-pic">
-					<img src="assets/img/people.jpg">
-				</div>
-				<div class="profile-desc">
-					<h1>Jonathan Patrick, PhD</h1>
-					<h3>japatrick[at]berkeley(dot)edu</h3>
-				</div>
-			</div>
-
-			<div class="profile-area">
-				<div class="profile-pic">
-					<img src="assets/img/people_arun.jpg">
-				</div>
-				<div class="profile-desc">
-					<h1>Arun Krishnan, PhD</h1>
-					<h2>Envision Fellow</h2>
-					<h3>arun.krishnan[at]berkeley(dot)edu</h3>
-				</div>
-			</div>
+		<div class="text-area" id="postdocs" style="text-align: center">
 		</div>
+		<script>
+			//Insert POSTDOCS in data array below.
+			//FORMAT: [Link, Picture, H1, H2, H3]
+			var data = [
+				["http://www.mnagaoglu.com/",
+				"assets/img/people_mehmet.jpg",
+				"Mehmet N. Agaoglu, PhD",
+				"",
+				"mna[at]berkeley(dot)edu"],
+
+				["",
+				"assets/img/people.jpg",
+				"Jonathan Patrick, PhD",
+				"",
+				"japatrick[at]berkeley(dot)edu"],
+
+				["",
+				"assets/img/people_arun.jpg",
+				"Arun Krishnan, PhD",
+				"Envision Fellow",
+				"arun.krishnan[at]berkeley(dot)edu"]
+			];
+
+			var htmlExpr = "";
+
+			//Loop through each data row and format/display it.
+			for (var i = 0; i < data.length; i++) {
+				htmlExpr += "<div class=\"profile-area\">";
+				if (data[i][0].length != 0) {
+					htmlExpr += "<a href=\"" + data[i][0] + "\" target=\"_blank\">";
+				}
+				htmlExpr += "<div class=\"profile-pic\">";
+				htmlExpr += "<img src=\"" + data[i][1] + "\"></div>";
+				htmlExpr += "<div class=\"profile-desc\">";
+				htmlExpr += "<h1>" + data[i][2] + "</h1>";
+				htmlExpr += "<h2>" + data[i][3] + "</h2>";
+				htmlExpr += "<h3>" + data[i][4] + "</h3>";
+				htmlExpr += "</div>";
+				if (data[i][0].length != 0) {
+					htmlExpr += "</a>";
+				}
+				htmlExpr += "</div>";
+			}
+			document.getElementById("postdocs").innerHTML += htmlExpr;
+		</script>
 
 		<div class="subtitle">
 			Students.
 		</div>
-		<div class="text-area" style="text-align: center">
-			<div class="profile-area">
-				<div class="profile-pic">
-					<img src="assets/img/people.jpg">
-				</div>
-				<div class="profile-desc">
-					<h1>Felix Wong</h1>
-					<h2>Optometry Student</h2>
-					<h3>Berkeley School of Optometry, Expected 2020</h3>
-				</div>
-			</div>
-
-			<div class="profile-area">
-				<div class="profile-pic">
-					<img src="assets/img/people.jpg">
-				</div>
-				<div class="profile-desc">
-					<h1>Tiffany Fung</h1>
-					<h2>Undergraduate Research Assistant</h2>
-					<h3>B.A. Molecular &amp; Cell Biology<br>
-						UC Berkeley, Expected 2018</h3>
-				</div>
-			</div>
-
-			<div class="profile-area">
-				<a href="https://mattsit.github.io/" target="_blank">
-					<div class="profile-pic">
-						<img src="assets/img/people_matt.jpg">
-					</div>
-					<div class="profile-desc">
-						<h1>Matthew T. Sit</h1>
-						<h2>Undergraduate Research Assistant</h2>
-						<h3>B.S. Electrical Engineering &amp; Computer Sciences<br>
-							B.S. Bioengineering<br>
-							UC Berkeley, Expected 2019</h3>
-					</div>
-				</a>
-			</div>
-
-			<div class="profile-area">
-				<div class="profile-pic">
-					<img src="assets/img/people.jpg">
-				</div>
-				<div class="profile-desc">
-					<h1>Derek Wan</h1>
-					<h2>Undergraduate Research Assistant</h2>
-					<h3>B.A. Molecular &amp; Cell Biology<br>
-						UC Berkeley, Expected 2020</h3>
-				</div>
-			</div>
-
-			<div class="profile-area">
-				<div class="profile-pic">
-					<img src="assets/img/people.jpg">
-				</div>
-				<div class="profile-desc">
-					<h1>Kelly Chang</h1>
-					<h2>Undergraduate Research Assistant</h2>
-					<h3>UC Berkeley, Expected 2020</h3>
-				</div>
-			</div>
-
-			<div class="profile-area">
-				<div class="profile-pic">
-					<img src="assets/img/people.jpg">
-				</div>
-				<div class="profile-desc">
-					<h1>Jason Chen</h1>
-					<h2>Undergraduate Research Assistant</h2>
-					<h3>UC Berkeley, Expected 2018</h3>
-				</div>
-			</div>
-
-			<div class="profile-area">
-				<div class="profile-pic">
-					<img src="assets/img/people.jpg">
-				</div>
-				<div class="profile-desc">
-					<h1>Alex Yeo</h1>
-					<h2>Undergraduate Research Assistant</h2>
-					<h3>UC Berkeley, Expected 2020</h3>
-				</div>
-			</div>
+		<div class="text-area" id="students" style="text-align: center">
 		</div>
+		<script>
+			//Insert STUDENTS in data array below.
+			//FORMAT: [Link, Picture, H1, H2, H3]
+			var data = [
+				["",
+				"assets/img/people.jpg",
+				"Felix Wong",
+		  		"Optometry Student",
+				"Berkeley School of Optometry, Expected 2020"],
+
+				["",
+				"assets/img/people.jpg",
+				"Tiffany Fung",
+		  		"Undergraduate Research Assistant",
+				"B.A. Molecular &amp; Cell Biology<br>UC Berkeley, Expected 2018"],
+
+				["https://mattsit.github.io/",
+				"assets/img/people_matt.jpg",
+				"Matthew T. Sit",
+		  		"Undergraduate Research Assistant",
+				"B.S. Electrical Engineering &amp; Computer Sciences<br>"+
+				"B.S. Bioengineering<br>" +
+				"UC Berkeley, Expected 2019"],
+
+				["",
+				"assets/img/people.jpg",
+				"Derek Wan",
+		  		"Undergraduate Research Assistant",
+				"B.A. Molecular &amp; Cell Biology<br>UC Berkeley, Expected 2020"],
+
+				["",
+				"assets/img/people.jpg",
+				"Kelly Chang",
+		  		"Undergraduate Research Assistant",
+				"UC Berkeley, Expected 2020"],
+
+				["",
+				"assets/img/people.jpg",
+				"Jason Chen",
+		  		"Undergraduate Research Assistant",
+				"UC Berkeley, Expected 2018"],
+
+			  	["",
+				"assets/img/people.jpg",
+				"Alex Yeo",
+		  		"Undergraduate Research Assistant",
+				"UC Berkeley, Expected 2020"]
+			];
+
+			var htmlExpr = "";
+
+			//Loop through each data row and format/display it.
+			for (var i = 0; i < data.length; i++) {
+				htmlExpr += "<div class=\"profile-area\">";
+				if (data[i][0].length != 0) {
+					htmlExpr += "<a href=\"" + data[i][0] + "\" target=\"_blank\">";
+				}
+				htmlExpr += "<div class=\"profile-pic\">";
+				htmlExpr += "<img src=\"" + data[i][1] + "\"></div>";
+				htmlExpr += "<div class=\"profile-desc\">";
+				htmlExpr += "<h1>" + data[i][2] + "</h1>";
+				htmlExpr += "<h2>" + data[i][3] + "</h2>";
+				htmlExpr += "<h3>" + data[i][4] + "</h3>";
+				htmlExpr += "</div>";
+				if (data[i][0].length != 0) {
+					htmlExpr += "</a>";
+				}
+				htmlExpr += "</div>";
+			}
+			document.getElementById("students").innerHTML += htmlExpr;
+		</script>
 
 		<div class="subtitle">
 			Alumni.
@@ -180,7 +181,7 @@
 		<div class="text-area" id="alumni" style="text-align: center">
 		</div>
 		<script>
-			//Insert news items in data array below.
+			//Insert ALUMNI in data array below.
 			//FORMAT: [H1, H2, H3]
 			var data = [
 			  	["Jean-Baptiste Bernard",
@@ -243,15 +244,15 @@
 				["Alice Su","",""]
 			];
 
-			var htmlExpr = '';
+			var htmlExpr = "";
 
-			//Loop through each news data row and format/display it.
+			//Loop through each data row and format/display it.
 			for (var i = 0; i < data.length; i++) {
-				htmlExpr += '<div class=\"profile-desc\">';
-				htmlExpr += '<h1>' + data[i][0] + '</h1>';
-				htmlExpr += '<h2>' + data[i][1] + '</h2>';
-				htmlExpr += '<h3>' + data[i][2] + '</h3>';
-				htmlExpr += '</div>';
+				htmlExpr += "<div class=\"profile-desc\">";
+				htmlExpr += "<h1>" + data[i][0] + "</h1>";
+				htmlExpr += "<h2>" + data[i][1] + "</h2>";
+				htmlExpr += "<h3>" + data[i][2] + "</h3>";
+				htmlExpr += "</div>";
 			}
 			document.getElementById("alumni").innerHTML += htmlExpr;
 		</script>
