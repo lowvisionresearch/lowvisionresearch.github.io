@@ -138,11 +138,22 @@ ul#nav {
 .photo {
     background: #EDEFF0;
     padding: 10px;
-    display: inline-block;
     transform: rotate(-1deg);
     -webkit-transform: rotate(-1deg);
     -moz-transform: rotate(-1deg);
     -ms-transform: rotate(-1deg);
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    transition: 1.5s;
+}
+
+#photo1 {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
 }
 
 .centered-content {
@@ -151,6 +162,7 @@ ul#nav {
     margin-top: 20px;
     margin-bottom: 40px;
     vertical-align: top;
+    position: relative;
 }
 
 #centered-content-left {
@@ -164,6 +176,9 @@ ul#nav {
 
 .centered-content img {
     width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #news-area {
