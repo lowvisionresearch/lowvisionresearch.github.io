@@ -55,6 +55,7 @@ a:hover {
     padding-top: 10px;
     display: inline-block;
     float: right;
+    margin-bottom: 20px;
 }
 
 #berkeleylogo {
@@ -64,6 +65,7 @@ a:hover {
     padding-right: 25px;
     display: inline-block;
     float: right;
+    margin-bottom: 20px;
 }
 
 #nav {
@@ -73,7 +75,6 @@ a:hover {
 }
 
 ul#nav {
-    float: right;
     margin-top: 20px;
     margin-left: 50px;
     margin-right: 20px;
@@ -84,12 +85,12 @@ ul#nav {
     border-top: solid 3px #e47725;
     border-bottom: solid 3px #e47725;
     border-radius: 5px;
-    display: inline-block;
+    text-align: center;
 }
 
 #nav li {
     display: inline;
-    margin-left: 25px;
+    margin-left: 5%;
 }
 
 #news-snippet {
@@ -142,19 +143,27 @@ ul#nav {
     -webkit-transform: rotate(-1deg);
     -moz-transform: rotate(-1deg);
     -ms-transform: rotate(-1deg);
-    margin: 20px;
 }
 
 .centered-content {
     text-align: center;
     display: inline-block;
-    width: 40%;
+    margin-top: 20px;
     margin-bottom: 40px;
     vertical-align: top;
 }
 
+#centered-content-left {
+    width: 50%;
+    margin-right: 2.5%;
+}
+
+#centered-content-right {
+    width: 25%;
+}
+
 .centered-content img {
-    display: inline-block;
+    width: 90%;
 }
 
 #news-area {
@@ -173,6 +182,7 @@ ul#nav {
     display: inline-block;
     margin-right: 100px;
     margin-bottom: 50px;
+    vertical-align: top;
 }
 
 .profile-pic {
@@ -212,6 +222,7 @@ ul#nav {
     font-size: 14px;
     font-weight: inherit;
     margin-top: 0;
+    line-height: normal;
 }
 
 /** NEWS **/
