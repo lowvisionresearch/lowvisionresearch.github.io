@@ -90,7 +90,8 @@ ul#nav {
 
 #nav li {
     display: inline;
-    margin-left: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 #news-snippet {
@@ -99,12 +100,17 @@ ul#nav {
     text-align: right;
 }
 
-#footer {
-    font-size: 16px;
+#contact-text {
+    font-size: 18px;
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-right: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
     text-align: right;
+    border: solid 3px #6ea442;
+    margin-top: 50px;
+    text-align: left;
+    word-wrap: break-word;
 }
 
 #page-title {
@@ -147,6 +153,7 @@ ul#nav {
     -moz-opacity: 0;
     -ms-opacity: 0;
     transition: 1.5s;
+    margin-bottom: 40px;
 }
 
 #photo1 {
@@ -165,13 +172,14 @@ ul#nav {
     position: relative;
 }
 
-#centered-content-left {
+#centered-content-fat {
     width: 50%;
-    margin-right: 2.5%;
 }
 
-#centered-content-right {
+#centered-content-skinny {
     width: 25%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .centered-content img {
@@ -179,6 +187,7 @@ ul#nav {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 #news-area {
