@@ -100,7 +100,7 @@ ul#nav {
     text-align: right;
 }
 
-#contact-text {
+.contact-text {
     font-size: 18px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -108,7 +108,7 @@ ul#nav {
     padding-left: 20px;
     text-align: right;
     border: solid 3px #6ea442;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: left;
     word-wrap: break-word;
 }
