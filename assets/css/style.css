@@ -270,4 +270,6 @@ ul#nav {
     margin-top: 40px;
     width: 90%;
     height: 300px;
+    color: black;
+    visibility: inherit;
 }
