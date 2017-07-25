@@ -24,12 +24,12 @@
 			<li><a href="people.html">people</a></li>
 			<li><a href="news.html">news</a></li>
 			<li><a href="resources.html">resources</a></li>
-			<li><a href="contact.html">contact</a></li>
+			<li><a href="volunteer.html">volunteer</a></li>
 		</ul>
 		<div style="clear: both"></div>
 
 		<div id="page-title">
-			Contact Us.
+			Volunteer for Us.
 		</div>
 		<div id="home-div">
 			<div class="centered-content" id="centered-content-skinny">
@@ -45,6 +45,29 @@
 					<b>Email:</b><br>
 					<a href="mailto:s.chung@berkeley.edu">s.chung[at]berkeley(dot)edu</a>
 				</div>
+
+				<div id="map"></div>
+				<script>
+					function initMap() {
+						var map = new google.maps.Map(document.getElementById("map"), {
+							zoom: 13,
+							center: {lat: 37.871573, lng: -122.254722}
+						});
+						var infowindow = new google.maps.InfoWindow();
+						var marker = new google.maps.Marker({
+							position: {lat: 37.871573, lng: -122.254722},
+							map: map
+						});
+						// Multiple InfoWindow Credit: http://stackoverflow.com/questions/11106671/google-maps-api-multiple-markers-with-infowindows
+						google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){
+							return function() {
+								infowindow.setContent(content);
+								infowindow.open(map,marker);
+							};
+						})(marker,'Sight Enhancement Laboratory At Berkeley',infowindow));
+					}
+				</script>
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlrhtmDXX4myPKsd_B6vBmoAl0ymaK3o4&callback=initMap"></script>
 			</div>
 			<div class="centered-content" id="centered-content-fat">
 				<img src="assets/img/berkeley.jpg" class="photo" id="photo1">
