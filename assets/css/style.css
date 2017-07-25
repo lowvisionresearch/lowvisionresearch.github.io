@@ -273,3 +273,7 @@ ul#nav {
     color: black;
     visibility: inherit;
 }
+
+#map div {
+    z-index: 2;
+}
