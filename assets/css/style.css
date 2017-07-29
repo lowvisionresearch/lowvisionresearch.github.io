@@ -121,6 +121,7 @@ ul#nav {
     border: solid 3px #6ea442;
     margin-top: 50px;
     text-align: right;
+    word-wrap: break-word;
 }
 
 .contact-text {
