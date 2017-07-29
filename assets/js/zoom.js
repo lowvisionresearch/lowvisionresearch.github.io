@@ -39,23 +39,27 @@ $(document).ready(function() {
     function update() {
         if (navigator.userAgent.indexOf("Firefox") <= 0){
             // Non-firefox browsers.
-            $("#home-div").css('MozTransform','scale(' + window.name + ')');
-            $(".text-area").css('MozTransform','scale(' + window.name + ')');
-            $("#page-title").css('MozTransform','scale(' + window.name + ')');
-            $(".subtitle").css('MozTransform','scale(' + window.name + ')');
-            $("#footer").css('MozTransform','scale(' + window.name + ')');
+            $("#home-div").css('zoom', window.name + '%');
+            $(".text-area").css('zoom', window.name + '%');
+            $("#page-title").css('zoom', window.name + '%');
+            $(".subtitle").css('zoom', window.name + '%');
+            $("#footer").css('zoom', window.name + '%');
             $("#zoom-in").css('filter', 'grayscale(0%)');
+            $("#zoom-in").css('-webkit-filter', 'grayscale(0%)');
             $("#zoom-in").css('cursor', 'pointer');
             $("#zoom-out").css('filter', 'grayscale(0%)');
+            $("#zoom-out").css('-webkit-filter', 'grayscale(0%)');
             $("#zoom-out").css('cursor', 'pointer');
 
             if (window.name >= upperZoomLimit) {
                 $("#zoom-in").css('filter', 'grayscale(100%)');
+                $("#zoom-in").css('-webkit-filter', 'grayscale(100%)');
                 $("#zoom-in").css('cursor', 'default');
             }
 
             if (window.name <= lowerZoomLimit) {
                 $("#zoom-out").css('filter', 'grayscale(100%)');
+                $("#zoom-out").css('-webkit-filter', 'grayscale(100%)');
                 $("#zoom-out").css('cursor', 'default');
             }
         } else {
