@@ -94,6 +94,29 @@ ul#nav {
     margin-right: 2.5%;
 }
 
+.zoom-btn {
+    display: inline-block;
+    float: right;
+    border: solid 2px #6ea442;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    line-height: 48px;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.zoom-btn:hover {
+    color: #e47725;
+    border-color: #e47725;
+}
+
+#zoom-out {
+    margin-right: 10%;
+}
+
 #news-snippet {
     border: solid 3px #6ea442;
     margin-top: 50px;
@@ -116,6 +139,7 @@ ul#nav {
 #page-title {
     margin-left: 5%;
     margin-top: 20px;
+    float: left;
 }
 
 .subtitle {
