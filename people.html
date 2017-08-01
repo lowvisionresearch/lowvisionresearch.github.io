@@ -8,7 +8,9 @@
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="assets/js/zoom.js"></script>
-  	</head>
+		<script src="assets/js/people.js"></script>
+		<script src="https://spreadsheets.google.com/feeds/cells/1xh1QoT2DxpygQHFzvcqlbHMK0d_lCvoaMGyFoM8frHs/3/public/values?alt=json-in-script&callback=doData"></script>
+	</head>
 
 	<body>
 		<div id="logo-group">
@@ -42,229 +44,21 @@
 		<div class="subtitle">
 			Principal Investigator.
 		</div>
-		<div class="text-area" style="text-align: center">
-			<div class="profile-area">
-				<a href="http://vision.berkeley.edu/?p=385" target="_blank">
-					<div class="profile-pic">
-						<img src="assets/img/people_chung.jpg">
-					</div>
-					<div class="profile-desc">
-						<h1>Susana Chung, OD, PhD, FAAO</h1>
-						<h2>Professor of Optometry and Vision Science</h2>
-						<h3>s.chung[at]berkeley(dot)edu</h3>
-					</div>
-				</a>
-			</div>
-		</div>
+		<div class="text-area" id="pi" style="text-align: center"></div>
 
 		<div class="subtitle">
 			Post-Doctoral Fellows.
 		</div>
-		<div class="text-area" id="postdocs" style="text-align: center">
-		</div>
-		<script>
-			//Insert POSTDOCS in data array below.
-			//FORMAT: [Link, Picture, H1, H2, H3]
-			var data = [
-				["http://www.mnagaoglu.com/",
-				"assets/img/people_mehmet.jpg",
-				"Mehmet N. Agaoglu, PhD",
-				"",
-				"mna[at]berkeley(dot)edu"],
-
-				["",
-				"assets/img/people_jay.jpg",
-				"Jonathan Patrick, PhD",
-				"",
-				"japatrick[at]berkeley(dot)edu"],
-
-				["",
-				"assets/img/people_arun.jpg",
-				"Arun Krishnan, PhD",
-				"Envision Fellow",
-				"arun.krishnan[at]berkeley(dot)edu"]
-			];
-
-			var htmlExpr = "";
-
-			//Loop through each data row and format/display it.
-			for (var i = 0; i < data.length; i++) {
-				htmlExpr += "<div class=\"profile-area\">";
-				if (data[i][0].length != 0) {
-					htmlExpr += "<a href=\"" + data[i][0] + "\" target=\"_blank\">";
-				}
-				htmlExpr += "<div class=\"profile-pic\">";
-				htmlExpr += "<img src=\"" + data[i][1] + "\"></div>";
-				htmlExpr += "<div class=\"profile-desc\">";
-				htmlExpr += "<h1>" + data[i][2] + "</h1>";
-				htmlExpr += "<h2>" + data[i][3] + "</h2>";
-				htmlExpr += "<h3>" + data[i][4] + "</h3>";
-				htmlExpr += "</div>";
-				if (data[i][0].length != 0) {
-					htmlExpr += "</a>";
-				}
-				htmlExpr += "</div>";
-			}
-			document.getElementById("postdocs").innerHTML += htmlExpr;
-		</script>
+		<div class="text-area" id="postdocs" style="text-align: center"></div>
 
 		<div class="subtitle">
 			Students.
 		</div>
-		<div class="text-area" id="students" style="text-align: center">
-		</div>
-		<script>
-			//Insert STUDENTS in data array below.
-			//FORMAT: [Link, Picture, H1, H2, H3]
-			var data = [
-				["",
-				"assets/img/people.jpg",
-				"Felix Wong",
-		  		"Optometry Student",
-				"Berkeley School of Optometry, Expected 2020"],
-
-				["",
-				"assets/img/people_tiffany.jpg",
-				"Tiffany Fung",
-		  		"Undergraduate Research Assistant",
-				"B.A. Molecular &amp; Cell Biology<br>UC Berkeley, Expected 2018"],
-
-				["https://mattsit.github.io/",
-				"assets/img/people_matt.jpg",
-				"Matthew T. Sit",
-		  		"Undergraduate Research Assistant",
-				"B.S. Electrical Engineering &amp; Computer Sciences<br>"+
-				"B.S. Bioengineering<br>" +
-				"UC Berkeley, Expected 2019"],
-
-				["",
-				"assets/img/people_derek.jpg",
-				"Derek Wan",
-		  		"Undergraduate Research Assistant",
-				"B.A. Molecular &amp; Cell Biology<br>UC Berkeley, Expected 2020"],
-
-				["",
-				"assets/img/people_kelly.jpg",
-				"Kelly Chang",
-		  		"Undergraduate Research Assistant",
-				"B.A. Molecular &amp; Cell Biology<br>UC Berkeley, Expected 2020"],
-
-				["",
-				"assets/img/people.jpg",
-				"Jason Chen",
-		  		"Undergraduate Research Assistant",
-				"UC Berkeley, Expected 2018"],
-
-			  	["",
-				"assets/img/people_alex.jpg",
-				"Alex Yeo",
-		  		"Undergraduate Research Assistant",
-				"B.S. Computer Science<br>UC Berkeley, Expected 2020"]
-			];
-
-			var htmlExpr = "";
-
-			//Loop through each data row and format/display it.
-			for (var i = 0; i < data.length; i++) {
-				htmlExpr += "<div class=\"profile-area\">";
-				if (data[i][0].length != 0) {
-					htmlExpr += "<a href=\"" + data[i][0] + "\" target=\"_blank\">";
-				}
-				htmlExpr += "<div class=\"profile-pic\">";
-				htmlExpr += "<img src=\"" + data[i][1] + "\"></div>";
-				htmlExpr += "<div class=\"profile-desc\">";
-				htmlExpr += "<h1>" + data[i][2] + "</h1>";
-				htmlExpr += "<h2>" + data[i][3] + "</h2>";
-				htmlExpr += "<h3>" + data[i][4] + "</h3>";
-				htmlExpr += "</div>";
-				if (data[i][0].length != 0) {
-					htmlExpr += "</a>";
-				}
-				htmlExpr += "</div>";
-			}
-			document.getElementById("students").innerHTML += htmlExpr;
-		</script>
+		<div class="text-area" id="students" style="text-align: center"></div>
 
 		<div class="subtitle">
 			Alumni.
 		</div>
-		<div class="text-area" id="alumni" style="text-align: center">
-		</div>
-		<script>
-			//Insert ALUMNI in data array below.
-			//FORMAT: [H1, H2, H3]
-			var data = [
-			  	["Jean-Baptiste Bernard",
-		  		"Aix-Marseille Université, Marseille, France",
-				"Former Post-Doctoral Fellow"],
-
-				["Paul Bulakowski",
-		  		"MindMyEducation",
-				"Former Post-Doctoral Fellow"],
-
-				["Girish Kumar",
-		  		"",
-				"Former Post-Doctoral Fellow"],
-
-				["Deyue (Dion) Yu",
-		  		"Associate Professor, The Ohio State University",
-				"Former Post-Doctoral Fellow"],
-
-				["Daniel Coates",
-		  		"Assistant Professor, University of Houston",
-				"Former Graduate Student"],
-
-				["Melanie Akau","",""],
-				["Mouna Attarha","",""],
-				["Greg Wingren","",""],
-				["Jazzi Junge","",""],
-				["Jeremy Chin","",""],
-				["Rajpreet Kaur","",""],
-				["Jimmy Kao","",""],
-				["Sandy Truong","",""],
-				["Amit Arunkumar","",""],
-				["Sue Kim","",""],
-				["Barnabas Yik","",""],
-				["Andrea Chai","",""],
-				["Wendy Su","",""],
-				["Hao Tran","",""],
-				["Yechong Yu","",""],
-				["Raymond Lee","",""],
-				["Brian Lu","",""],
-				["Jessica Ito","",""],
-				["Ruby Lin","",""],
-				["Kristen Adachi","",""],
-				["Rana Khan","",""],
-				["Angela Ling","",""],
-				["Jenny Chang","",""],
-				["Eric Hong","",""],
-				["Jessica Lin","",""],
-				["Vivian Look","",""],
-				["Chang Liu","",""],
-				["Annie Yau","",""],
-				["Jennifer Liu","",""],
-				["Kelly Cai","",""],
-				["Emily Cheng","",""],
-				["Bonnie Ho","",""],
-				["Liza Leykina","",""],
-				["Katherine Lo","",""],
-				["Drew Wodecki","",""],
-				["Emma Ye","",""],
-				["Sindhu Ravuri","",""],
-				["Alice Su","",""]
-			];
-
-			var htmlExpr = "";
-
-			//Loop through each data row and format/display it.
-			for (var i = 0; i < data.length; i++) {
-				htmlExpr += "<div class=\"profile-desc\">";
-				htmlExpr += "<h1>" + data[i][0] + "</h1>";
-				htmlExpr += "<h2>" + data[i][1] + "</h2>";
-				htmlExpr += "<h3>" + data[i][2] + "</h3>";
-				htmlExpr += "</div>";
-			}
-			document.getElementById("alumni").innerHTML += htmlExpr;
-		</script>
+		<div class="text-area" id="alumni" style="text-align: center"></div>
 	</body>
 </html>
