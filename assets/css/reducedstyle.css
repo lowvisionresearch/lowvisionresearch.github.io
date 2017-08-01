@@ -1,0 +1,97 @@
+@media (max-width: 1185px) {
+    #logo-group {
+        text-align: center;
+    }
+
+    #logo {
+        float: none;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #berkeleylogo {
+        float: none;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #title {
+        float: none;
+        display: block;
+    }
+
+    #title h1 {
+        padding-top: 0;
+    }
+
+    .zoom-btn {
+        display: none;
+    }
+
+    .centered-content {
+        display: block;
+        position: relative;
+    }
+
+    .centered-content img {
+        position: absolute;
+        margin: auto;
+        top: 10px;
+        left: 50%;
+        height: 400px;
+        width: auto;
+        transform: rotate(-1deg) translateX(-50%);
+        -webkit-transform: rotate(-1deg) translateX(-50%);
+        -moz-transform: rotate(-1deg) translateX(-50%);
+        -ms-transform: rotate(-1deg) translateX(-50%);
+    }
+
+    #centered-content-fat {
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 100px;
+        width: 90%;
+        height: 400px;
+    }
+
+    #centered-content-skinny {
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 600px) {
+    .photo {
+        display: none;
+    }
+
+    #nonslideshowphoto {
+        display: inline;
+        height: auto;
+        width: 80%;
+        opacity: 1;
+        -webkit-opacity: 1;
+        -moz-opacity: 1;
+        -ms-opacity: 1;
+    }
+
+    #centered-content-fat {
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    #centered-content-skinny {
+        margin-top: 0;
+    }
+
+    .centered-content img {
+        position: static;
+        transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+        -moz-transform: rotate(-1deg);
+        -ms-transform: rotate(-1deg);
+        height: auto;
+    }
+}

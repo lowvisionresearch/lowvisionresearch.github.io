@@ -188,6 +188,10 @@ ul#nav {
     -ms-opacity: 1;
 }
 
+#nonslideshowphoto {
+    display: none;
+}
+
 .centered-content {
     text-align: center;
     display: inline-block;
@@ -229,7 +233,8 @@ ul#nav {
 
 .profile-area {
     display: inline-block;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 50px;
     vertical-align: top;
 }

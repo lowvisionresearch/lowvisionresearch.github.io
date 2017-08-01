@@ -17,5 +17,5 @@ $(document).ready(function() {
          document.getElementById(pictures[(i)%pictures.length]).style.setProperty("-moz-opacity", "1");
          document.getElementById(pictures[(i)%pictures.length]).style.setProperty("-ms-opacity", "1");
     }, 7500);
-    
+
 });
