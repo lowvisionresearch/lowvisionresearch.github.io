@@ -71,6 +71,9 @@ $(document).ready(function() {
             $(".text-area").css('MozTransform','scale(' + window.name + ')');
             $("#page-title").css('MozTransform','scale(' + window.name + ')');
             $(".subtitle").css('MozTransform','scale(' + window.name + ')');
+            $("#news-snippet").css('MozTransform','scale(' + window.name + ')');
+            $("#news-snippet div").css('MozTransform','scale(1)');
+            $("#news-snippet").css('MozTransformOrigin','0 0');
             $("#home-div").css('MozTransformOrigin','50% 0');
             $(".text-area").css('MozTransformOrigin','50% 0');
             $("#page-title").css('MozTransformOrigin','0 0');
