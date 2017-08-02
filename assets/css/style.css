@@ -221,7 +221,8 @@ ul#nav {
 
 #news-area {
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 #home-div {
