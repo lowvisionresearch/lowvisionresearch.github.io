@@ -17,7 +17,3 @@ function readData() {
 
     document.getElementById("publications-text-area").innerHTML += htmlExpr;
 }
-
-$(document).ready(function(){
-    readData();
-});

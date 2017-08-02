@@ -116,7 +116,3 @@ function readData() {
     document.getElementById("students").innerHTML += htmlExprStudents;
     document.getElementById("alumni").innerHTML += htmlExprAlumni;
 }
-
-$(document).ready(function(){
-    readData();
-});

@@ -17,7 +17,3 @@ function readData() {
 
     document.getElementById("news-area").innerHTML += htmlExpr;
 }
-
-$(document).ready(function(){
-    readData();
-});
