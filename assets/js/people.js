@@ -18,9 +18,9 @@ function readData() {
             }
             htmlExprPI += "<div class=\"profile-pic\">";
             if (data[i+5]["gs$cell"]["$t"] != "--") {
-                htmlExprPI += "<img src=\"" + data[i+5]["gs$cell"]["$t"] + "\"></div>";
+                htmlExprPI += "<img src=\"https://lowvisionresearch.github.io/" + data[i+5]["gs$cell"]["$t"] + "\"></div>";
             } else {
-                htmlExprPI += "<img src=\"assets/img/people.jpg\"></div>";
+                htmlExprPI += "<img src=\"https://lowvisionresearch.github.io/assets/img/people.jpg\"></div>";
             }
             htmlExprPI += "<div class=\"profile-desc\">";
             if (data[i+2]["gs$cell"]["$t"] != "--") {
@@ -44,9 +44,9 @@ function readData() {
             }
             htmlExprPostDocs += "<div class=\"profile-pic\">";
             if (data[i+5]["gs$cell"]["$t"] != "--") {
-                htmlExprPostDocs += "<img src=\"" + data[i+5]["gs$cell"]["$t"] + "\"></div>";
+                htmlExprPostDocs += "<img src=\"https://lowvisionresearch.github.io/" + data[i+5]["gs$cell"]["$t"] + "\"></div>";
             } else {
-                htmlExprPostDocs += "<img src=\"assets/img/people.jpg\"></div>";
+                htmlExprPostDocs += "<img src=\"https://lowvisionresearch.github.io/assets/img/people.jpg\"></div>";
             }
             htmlExprPostDocs += "<div class=\"profile-desc\">";
             if (data[i+2]["gs$cell"]["$t"] != "--") {
@@ -70,9 +70,9 @@ function readData() {
             }
             htmlExprStudents += "<div class=\"profile-pic\">";
             if (data[i+5]["gs$cell"]["$t"] != "--") {
-                htmlExprStudents += "<img src=\"" + data[i+5]["gs$cell"]["$t"] + "\"></div>";
+                htmlExprStudents += "<img src=\"https://lowvisionresearch.github.io/" + data[i+5]["gs$cell"]["$t"] + "\"></div>";
             } else {
-                htmlExprStudents += "<img src=\"assets/img/people.jpg\"></div>";
+                htmlExprStudents += "<img src=\"https://lowvisionresearch.github.io/assets/img/people.jpg\"></div>";
             }
             htmlExprStudents += "<div class=\"profile-desc\">";
             if (data[i+2]["gs$cell"]["$t"] != "--") {
