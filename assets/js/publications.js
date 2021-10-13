@@ -1,19 +1,23 @@
-var data = null;
-function doData(json) {
-    data = json.feed.entry;
-}
-
 function readData() {
-    var htmlExpr = '<ol>';
+    var data;
+	$.ajax({
+	  type: "GET",
+	  url: "assets/data/publications.csv",
+	  dataType: "text",
+	  success: function(response)
+	  {
+		data = $.csv.toArrays(response);
 
-    //Loop through each news data row and format/display it.
-    for (var i = 1; i < data.length; i++) {
-        htmlExpr += '<li>';
-        htmlExpr += data[i]["gs$cell"]["$t"].replace(/&/g, "&amp;");
-        htmlExpr += '</li>';
-    }
+        var htmlExpr = '<ol>';
 
-    htmlExpr += "</ol>";
+        // Loop through each news data row and format/display it.
+        for (var i = 1; i < data.length; i++) {
+            htmlExpr += '<li>' + data[i] + '</li>';
+        }
 
-    document.getElementById("publications-text-area").innerHTML += htmlExpr;
+        htmlExpr += "</ol>";
+
+        document.getElementById("publications-text-area").innerHTML += htmlExpr;
+	  }
+	});
 }
