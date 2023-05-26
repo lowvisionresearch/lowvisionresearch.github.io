@@ -5,7 +5,7 @@ body {
     font-weight: 300;
     font-size: 48px;
     margin: 0;
-    background-color: #102a4f;
+    background-color: #ffffff;
     color: #f7b01a;
     height: 100%;
     width: 100%;
@@ -82,8 +82,8 @@ ul#nav {
     padding-right: 25px;
     padding-bottom: 10px;
     padding-top: 10px;
-    border-top: solid 3px #e47725;
-    border-bottom: solid 3px #e47725;
+    border-top: solid 3px #000000;
+    border-bottom: solid 3px #000000;
     border-radius: 5px;
     text-align: center;
 }
@@ -97,7 +97,7 @@ ul#nav {
 .zoom-btn {
     display: inline-block;
     float: right;
-    border: solid 2px #6ea442;
+    border: solid 2px #000000;
     border-radius: 50%;
     height: 48px;
     width: 48px;
@@ -110,7 +110,7 @@ ul#nav {
 
 .zoom-btn:hover {
     color: #e47725;
-    border-color: #e47725;
+    border-color: #000000;
 }
 
 #zoom-out {
@@ -118,7 +118,7 @@ ul#nav {
 }
 
 #news-snippet {
-    border: solid 3px #6ea442;
+    border: solid 3px #000000;
     margin-top: 50px;
     text-align: right;
     word-wrap: break-word;
