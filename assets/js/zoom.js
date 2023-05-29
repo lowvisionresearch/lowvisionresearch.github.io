@@ -3,7 +3,7 @@ $(document).ready(function() {
     var upperZoomLimit = 150;
     var lowerZoomLimit = 75;
     var stepSize = 1.25;
-
+    
     /** Firefox uses different scaling. **/
     if (navigator.userAgent.indexOf("Firefox") > 0){
         upperZoomLimit /= 125;
