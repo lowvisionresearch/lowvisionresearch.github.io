@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
     
     if (typeof readData === "function") {
-        //readData();
+        readData();
     }
     update();
 
