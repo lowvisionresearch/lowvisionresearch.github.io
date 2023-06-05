@@ -1,9 +1,9 @@
 var data = null;
 function doData(json) {
-    if(json.feed.entry[0].title['$t']=='selab_news')
-        data = json.feed.entry[0].content;
-    else
-        data = json.feed.entry[1].content;
+   // if(json.feed.entry[0].title['$t']=='selab_news')
+   //     data = json.feed.entry[0].content;
+   // else
+    data = json.feed.entry[1].content;
 
 }
 
