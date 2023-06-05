@@ -21,5 +21,5 @@ function readData() {
     htmlExpr += '</div>';
 
     //document.getElementById("news-snippet").innerHTML += htmlExpr;
-    document.getElementById("news-snippet").innerText = 'test2';
+    document.getElementById("news-snippet").innerText = data;
 }
