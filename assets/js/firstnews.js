@@ -20,5 +20,6 @@ function readData() {
     //htmlExpr += '<div class=\"detail\">' + dataLine[2].substring(3) + '</div>';
     htmlExpr += '</div>';
 
-    document.getElementById("news-snippet").innerHTML += htmlExpr;
+    //document.getElementById("news-snippet").innerHTML += htmlExpr;
+    document.getElementById("news-snippet").innerText = 'test';
 }
