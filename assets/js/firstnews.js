@@ -14,7 +14,7 @@ function readData() {
 
     //var dataLine = data[0].split('</p>');
     htmlExpr += '<div class=\"text-area\">';
-    htmlExpr += '<div class=\"detail\">' + data['$t'] + '</div>';
+    htmlExpr += '<div class=\"detail\">' + 'test' + '</div>';
     //htmlExpr += '<div class=\"headline\">' + dataLine[1].substring(3) + '</div>';
     //htmlExpr += '<div class=\"date\">' + dataLine[0].substring(3) + '</div>';
     //htmlExpr += '<div class=\"detail\">' + dataLine[2].substring(3) + '</div>';
