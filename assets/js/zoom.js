@@ -18,11 +18,11 @@ $(document).ready(function() {
             window.name /= 100;
         }
     }
-    readData();
-    //if (typeof readData === "function") {
-    //    readData();
-    //}
-    //update();
+    
+    if (typeof readData === "function") {
+        readData();
+    }
+    update();
 
     $("#zoom-in").click(function(event) {
         event.stopPropagation();

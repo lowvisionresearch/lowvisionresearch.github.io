@@ -4,6 +4,7 @@ function doData(json) {
         data = json.feed.entry[0].content;
     else
         data = json.feed.entry[1].content;
+
 }
 
 function readData() {
