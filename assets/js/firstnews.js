@@ -4,12 +4,11 @@ function doData(json) {
         data = json.feed.entry[0].content;
     else
         data = json.feed.entry[1].content;
-    console.log(data);
 }
 
 function readData() {
     
-    data = data['$t'].split('<p><br />');
+    data = String(data['$t']).split('<p><br />');
     var htmlExpr = '';
 
     var dataLine = data[0].split('</p>');
