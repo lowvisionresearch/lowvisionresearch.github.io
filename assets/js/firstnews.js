@@ -11,11 +11,11 @@ function readData() {
     data = String(data['$t']).split('<p><br />');
     var htmlExpr = '';
 
-    var dataLine = data[0].split('</p>');
+    var dataLine = String(data[0]).split('</p>');
     htmlExpr += '<div class=\"text-area\">';
-    htmlExpr += '<div class=\"headline\">' + dataLine[1].substring(3) + '</div>';
-    htmlExpr += '<div class=\"date\">' + dataLine[0].substring(3) + '</div>';
-    htmlExpr += '<div class=\"detail\">' + dataLine[2].substring(3) + '</div>';
+    htmlExpr += '<div class=\"headline\">' + String(dataLine[1]).substring(3) + '</div>';
+    htmlExpr += '<div class=\"date\">' + String(dataLine[0]).substring(3) + '</div>';
+    htmlExpr += '<div class=\"detail\">' + String(dataLine[2]).substring(3) + '</div>';
     htmlExpr += '</div>';
 
     document.getElementById("news-snippet").innerHTML += htmlExpr;
