@@ -9,6 +9,7 @@ function doData(json) {
 function readData() {
     
     data = String(data['$t']);
+    console.log(data);
     var htmlExpr = '';
 
     //var dataLine = String(data[0]).split('</p>');
