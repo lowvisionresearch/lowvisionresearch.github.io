@@ -8,7 +8,7 @@ function doData(json) {
 
 function readData() {
     
-    data = String(data['$t']);
+    //data = String(data['$t']);
     console.log(data);
     var htmlExpr = '';
 
@@ -16,7 +16,7 @@ function readData() {
     htmlExpr += '<div class=\"text-area\">';
     //htmlExpr += '<div class=\"headline\">' + String(dataLine[1]).substring(3) + '</div>';
     //htmlExpr += '<div class=\"date\">' + String(dataLine[0]).substring(3) + '</div>';
-    htmlExpr += '<div class=\"detail\">' + data + '</div>';
+    htmlExpr += '<div class=\"detail\">' + 'test' + '</div>';
     htmlExpr += '</div>';
 
     document.getElementById("news-snippet").innerHTML += htmlExpr;
