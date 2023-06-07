@@ -8,13 +8,13 @@ function doData(json) {
 
 function readData() {
     
-    data = String(data['$t']).split('<p><br />');
+    data = String(data['$t']);
     var htmlExpr = '';
 
-    var dataLine = String(data[0]).split('</p>');
+    //var dataLine = String(data[0]).split('</p>');
     htmlExpr += '<div class=\"text-area\">';
-    htmlExpr += '<div class=\"headline\">' + String(dataLine[1]).substring(3) + '</div>';
-    htmlExpr += '<div class=\"date\">' + String(dataLine[0]).substring(3) + '</div>';
+    //htmlExpr += '<div class=\"headline\">' + String(dataLine[1]).substring(3) + '</div>';
+    //htmlExpr += '<div class=\"date\">' + String(dataLine[0]).substring(3) + '</div>';
     htmlExpr += '<div class=\"detail\">' + data + '</div>';
     htmlExpr += '</div>';
 
