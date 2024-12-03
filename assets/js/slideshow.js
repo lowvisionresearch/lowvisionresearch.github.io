@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
     var pictures = [
-        "photo1",
-        "photo2",
+        "photo4",
+        "photo5",
 	    "photo3"
     ];
     var i = 0;
