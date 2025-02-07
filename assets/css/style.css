@@ -173,7 +173,7 @@ ul#nav {
     -webkit-transform: rotate(-1deg);
     -moz-transform: rotate(-1deg);
     -ms-transform: rotate(-1deg);
-    opacity: 0;
+    opacity: 1;
     -webkit-opacity: 0;
     -moz-opacity: 0;
     -ms-opacity: 0;

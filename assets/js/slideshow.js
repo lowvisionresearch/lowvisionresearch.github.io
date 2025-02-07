@@ -6,6 +6,12 @@ $(document).ready(function() {
 	    "photo3"
     ];
     var i = 0;
+	
+	 // Show the first image immediately
+    document.getElementById(pictures[0]).style.opacity = "1";
+    document.getElementById(pictures[0]).style.setProperty("-webkit-opacity", "1");
+    document.getElementById(pictures[0]).style.setProperty("-moz-opacity", "1");
+    document.getElementById(pictures[0]).style.setProperty("-ms-opacity", "1");
 
     setInterval(function() {
 
