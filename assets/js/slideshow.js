@@ -13,17 +13,31 @@ $(document).ready(function() {
     document.getElementById(pictures[0]).style.setProperty("-moz-opacity", "1");
     document.getElementById(pictures[0]).style.setProperty("-ms-opacity", "1");
 
-    setInterval(function() {
+   // Start the first transition earlier (after 3 seconds instead of 7)
+    setTimeout(function() {
+        i++;
+        document.getElementById(pictures[0]).style.opacity = "0";
+        document.getElementById(pictures[0]).style.setProperty("-webkit-opacity", "0");
+        document.getElementById(pictures[0]).style.setProperty("-moz-opacity", "0");
+        document.getElementById(pictures[0]).style.setProperty("-ms-opacity", "0");
 
-         i++;
-         document.getElementById(pictures[(i-1)%pictures.length]).style.opacity = "0";
-         document.getElementById(pictures[(i-1)%pictures.length]).style.setProperty("-webkit-opacity", "0");
-         document.getElementById(pictures[(i-1)%pictures.length]).style.setProperty("-moz-opacity", "0");
-         document.getElementById(pictures[(i-1)%pictures.length]).style.setProperty("-ms-opacity", "0");
-         document.getElementById(pictures[(i)%pictures.length]).style.opacity = "1";
-         document.getElementById(pictures[(i)%pictures.length]).style.setProperty("-webkit-opacity", "1");
-         document.getElementById(pictures[(i)%pictures.length]).style.setProperty("-moz-opacity", "1");
-         document.getElementById(pictures[(i)%pictures.length]).style.setProperty("-ms-opacity", "1");
-    }, 7000);
+        document.getElementById(pictures[i % pictures.length]).style.opacity = "1";
+        document.getElementById(pictures[i % pictures.length]).style.setProperty("-webkit-opacity", "1");
+        document.getElementById(pictures[i % pictures.length]).style.setProperty("-moz-opacity", "1");
+        document.getElementById(pictures[i % pictures.length]).style.setProperty("-ms-opacity", "1");
 
+        // Continue normal slideshow at 7-second intervals
+        setInterval(function() {
+            i++;
+            document.getElementById(pictures[(i-1) % pictures.length]).style.opacity = "0";
+            document.getElementById(pictures[(i-1) % pictures.length]).style.setProperty("-webkit-opacity", "0");
+            document.getElementById(pictures[(i-1) % pictures.length]).style.setProperty("-moz-opacity", "0");
+            document.getElementById(pictures[(i-1) % pictures.length]).style.setProperty("-ms-opacity", "0");
+
+            document.getElementById(pictures[i % pictures.length]).style.opacity = "1";
+            document.getElementById(pictures[i % pictures.length]).style.setProperty("-webkit-opacity", "1");
+            document.getElementById(pictures[i % pictures.length]).style.setProperty("-moz-opacity", "1");
+            document.getElementById(pictures[i % pictures.length]).style.setProperty("-ms-opacity", "1");
+        }, 7000);
+    }, 3000); // First transition happens after 3 seconds
 });
