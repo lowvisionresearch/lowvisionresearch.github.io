@@ -308,3 +308,33 @@ ul#nav {
 #map div {
     z-index: 2;
 }
+
+/** Research Page **/
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 10%;
+}
+
+.text-area {
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.image-container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
