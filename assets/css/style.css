@@ -290,14 +290,14 @@ ul#nav {
 .news-headline {
     font-size: 22px;
     font-weight: 700;
-    color: #f7b01a; /* Yellow */
+    color: #b87004; 
     margin-bottom: 5px;
 }
 
 .news-date {
     font-size: 14px;
     font-style: italic;
-    color: #b87004;
+    color: #f7b01a;/* Yellow */
     margin-bottom: 5px;
 }
 
