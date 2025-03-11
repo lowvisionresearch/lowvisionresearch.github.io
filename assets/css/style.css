@@ -281,18 +281,30 @@ ul#nav {
 }
 
 /** NEWS **/
-.headline {
-    font-size: 24px;
-    font-weight: 400;
+.news-entry {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
 }
 
-.date {
+.news-headline {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f7b01a; /* Yellow */
+    margin-bottom: 5px;
+}
+
+.news-date {
     font-size: 14px;
     font-style: italic;
+    color: #6e6e6e;
+    margin-bottom: 5px;
 }
 
-.detail {
-
+.news-description {
+    font-size: 18px;
+    color: #ffffff; /* White */
+    line-height: 1.6;
 }
 
 /** VOLUNTEER **/
